@@ -12,10 +12,15 @@
     margin-right: auto;
         .row {
             overflow: hidden; /* Clear floats */
+             float: left;
+            width: 50%; /* Each column takes 50% width */
         }
-
-        .column {
+.columnleft {
             float: left;
+            width: 50%; /* Each column takes 50% width */
+        }
+        .columnright {
+            float: right;
             width: 50%; /* Each column takes 50% width */
         }
   }
@@ -34,12 +39,12 @@
 </head>
 <body>
     <div class="row">
-        <div class="column">
+        <div class="columnleft">
             <!-- Left column content -->
             <p>Preparation de VM et installé des outils DevOPS: Docker, Jenkins et Github.</p>
              <img src="dockerrun.PNG" alt="dockerrun" class="responsive">
         </div>
-        <div class="column">
+        <div class="columnright">
             <!-- Right column content (images) -->
              <p>Creation de Docker image ex: python et puis faire de conternization</p>
     <img src="pythonDockCont.PNG" alt="pythonDockCont" class="responsive">
@@ -47,12 +52,12 @@
     </div>
          <br></br>
        <div class="row">
-        <div class="column">
+        <div class="columnleft">
     <p>Creation de pipeline scripts pour la continous build depuis Github à Jenkins.</p>
     <img src="jenkinslink.PNG" alt="jenkinslink" class="responsive">
             </div>
              <br></br>
-        <div class="column">
+        <div class="columnright">
  
     <img src="jenkisbuilt.PNG" alt="jenkisbuilt" class="responsive">
        <p>échec d'installation direct ou pour faire de connection avec github depuis le VM (putty). </p>
@@ -63,12 +68,12 @@
                   </div>
     </div>
     <div class="row">
-        <div class="column">
+        <div class="columnleft">
    <p>échec d'installation  Zabbix, enlien avec NGINX serveur.  Zabbix est un logiciel qui supervise de nombreux paramètres réseaux ainsi que la et l'intégrité des serveurs.</p>
    <br></br> 
     <img src="nginxzabbixF.PNG" alt="nginxzabbixF" class="responsive">
               </div>
-        <div class="column">
+        <div class="columnright">
     <p>Zabbix utilise un mécanisme de notification flexible qui permet aux utilisateurs de configurer une base d'alerte e-mail</p>
        <img src="zabbixflux.PNG" alt="zabbixflux" class="responsive">
    <br></br>
@@ -78,11 +83,11 @@
     </div>
     <br></br>
     <div class="row">
-        <div class="column">
+        <div class="columnleft">
    <p>Diffuclté Zabbix dans serveur et github n'est pas lié dans la VM</p>
    <img src="zabbix.PNG" alt="zab" "class="responsive">
             </div>
-        <div class="column">
+        <div class="columnright">
    <br></br>
    <p>Firewall blocqué</p>
    <img src="firewallssh.PNG"  "class="responsive">
